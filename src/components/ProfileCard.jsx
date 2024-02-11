@@ -14,7 +14,7 @@ const ProfileCard = ({ profile }) => {
   } = profile;
   return (
     <>
-      <div className="max-w-sm rounded-lg">
+      <div className="max-w-sm rounded-lg bg-gray-100 dark:bg-[#1B2937]">
         <div className="rounded-t-lg h-32 overflow-hidden">
           <img
             className="object-cover object-top w-full"
@@ -30,11 +30,11 @@ const ProfileCard = ({ profile }) => {
           />
         </div>
         <div className="text-center mt-2 ">
-          <h2 className="text-xl">
+          <h2 className="text-xl dark:text-gray-300">
             <span className="font-semibold ">{firstName}</span> {lastName}
           </h2>
-          <p className="text-gray-600 italic">{email}</p>
-          <p className="font-bold text-gray-50 bg-purple-700 px-2 py-1 rounded-full w-[50%] mx-auto">
+          <p className="text-gray-600 italic dark:text-[#6A7082]">{email}</p>
+          <p className="font-bold text-gray-50 dark:text-gray-300 dark:bg-[#6A7082] bg-purple-700 px-2 py-1 rounded-full w-[50%] mx-auto">
                 {companyName}
               </p>
         </div>
