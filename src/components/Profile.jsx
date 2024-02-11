@@ -5,7 +5,7 @@ const Profile = () => {
   const [profileData, setProfileData] = useState([]);
  console.log("data", profileData);
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_ProfileUrl}profile`)
+    fetch('https://profile-grmy.onrender.com/profile')
       .then((res) => {
         return res?.json();
       })
