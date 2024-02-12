@@ -2,30 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProfileCard = ({ profile }) => {
-  const {
-    id,
-    Avatar,
-    banner,
-    firstName,
-    lastName,
-    email,
-    address,
-    companyName,
-  } = profile;
+  const { id, firstName, lastName, email, image, company } = profile;
+
   return (
     <>
-      <div className="max-w-sm rounded-lg bg-gray-100 dark:bg-[#1B2937]">
+      <div
+        className="max-w-sm rounded-lg bg-gray-100 dark:bg-[#1B2937]"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div className="rounded-t-lg h-32 overflow-hidden">
           <img
             className="object-cover object-top w-full"
-            src={banner}
+            src="https://i.ibb.co/r3j2WTN/banner7.png"
             alt="..."
           />
         </div>
         <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
           <img
             className="object-cover object-center h-32"
-            src={Avatar}
+            src={image}
             alt="..."
           />
         </div>
@@ -34,9 +30,9 @@ const ProfileCard = ({ profile }) => {
             <span className="font-semibold ">{firstName}</span> {lastName}
           </h2>
           <p className="text-gray-600 italic dark:text-[#6A7082]">{email}</p>
-          <p className="font-bold text-gray-50 dark:text-gray-300 dark:bg-[#6A7082] bg-purple-700 px-2 py-1 rounded-full w-[50%] mx-auto">
-                {companyName}
-              </p>
+          <p className="font-bold text-gray-50 dark:text-gray-300 dark:bg-[#6A7082] bg-purple-700 px-2 py-1 rounded-full w-[60%] mx-auto">
+            {company?.name}
+          </p>
         </div>
 
         <div className="p-4 border-t mx-8 mt-2">
