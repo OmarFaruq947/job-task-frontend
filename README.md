@@ -60,3 +60,7 @@ Live Site:https://job-task-frontend.vercel.app/
 ## Developer:
 
 LinkedIn: https://www.linkedin.com/in/md-omar-faruq-7458b819a/
+
+## MockUp
+
+<img src="./src/assets/djndjnd.PNG"/>
